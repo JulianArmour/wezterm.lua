@@ -11,6 +11,7 @@ config.default_prog = {'C:\\Program Files\\PowerShell\\7\\pwsh.exe'}
 
 -- COLOR SCHEME
 config.color_scheme = 'Gruvbox dark, soft (base16)'
+config.force_reverse_video_cursor = true
 
 -- FONT
 config.font = wezterm.font 'Fira Code'
