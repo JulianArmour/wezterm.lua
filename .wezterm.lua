@@ -5,27 +5,21 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
--- Spawn a powershell
-config.default_prog = {'C:\\Program Files\\PowerShell\\7\\pwsh.exe'}
-
-
 -- COLOR SCHEME
-config.color_scheme = 'Gruvbox dark, soft (base16)'
-config.force_reverse_video_cursor = true
-
--- FONT
-config.font = wezterm.font 'Fira Code'
+config.color_scheme = 'Rosé Pine (base16)'
 
 -- TABS
-config.hide_tab_bar_if_only_one_tab = true
+config.enable_tab_bar = false
 
 config.window_padding = {
-  left = 5,
+  left = 0,
   right = 0,
-  top = 5,
+  top = 0,
   bottom = 0,
 }
 
+-- WSL
+config.default_domain = 'WSL:Ubuntu'
 
 -- and finally, return the configuration to wezterm
 return config
